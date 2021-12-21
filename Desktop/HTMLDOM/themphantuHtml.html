@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>them phan tu</title>
+</head>
+<body>
+    <ol id="student-list">
+        <li id="st1"><h3>student 1</h3></li>
+        <li id="st2"><h3>student 2</h3></li>
+    </ol>
+    <button type="button" onclick="addStudent()">Add Student</button>
+    <script>
+        let studentList=document.getElementById("student-list");
+        let studentTwo=document.getElementById("st2");
+        let liObject=document.createElement("li");
+        liObject.innerHTML="<h3>student 3</h3>";
+
+        function addStudent(){
+            //studentList.appendChild(liObject);
+            studentList.insertBefore(liObject, studentTwo);
+        }
+    </script>
+</body>
+</html>

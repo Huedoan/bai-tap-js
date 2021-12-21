@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baiTapGameDoanSo</title>
+</head>
+<body>
+    <button id="startBtn" style="background-color: yellow;">Play</button>
+    <script>
+        let startBtn = document.getElementById("startBtn"); 
+        let randomNum;
+        let guessNum;
+        startBtn.addEventListener("click", function(){
+            let maxNum = parseInt(prompt("Let enter max number : "))
+            randomNum = parseInt(Math.random() * maxNum);
+            guessNum = parseInt(prompt("let enter guessing number"));
+
+            let count = 0; 
+
+            while(count < 3){
+                if(guessNum>randomNum){
+                    alert("bigger than random number");
+                }
+                if(guessNum<randomNum) {
+                    alert("smaller than random number");
+                }
+                if(guessNum==randomNum) {
+                    alert("Congratulations!")
+                break;
+                }
+                guessNum = parseInt(prompt("let enter guessing number"));
+                count++
+            }
+            if(count >=3){
+                alert("3 times over!Thank you for playing!");
+            }
+
+
+        });
+
+
+    </script>
+</body>
+</html>

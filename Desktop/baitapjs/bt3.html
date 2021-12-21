@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// dau vao la so tien vay, lai suat, so nam(n) //
+// hien thi ket qua so tien phai tra sau n nam //
+
+        let moneyFirst = prompt ('nhap so tien vay ban dau');
+        let laiSuat = prompt ('nhap lai suat');
+        let soNam = prompt ('nhap so nam');
+
+        let tienLoiSauMotNam = parseInt(moneyFirst) * (laiSuat/100);
+        let soTienTraSauNNam = parseInt(moneyFirst) + parseInt(soNam) * parseInt(tienLoiSauMotNam);
+
+        document.write('so tien phai tra sau ' + soNam + ' nam ' + soTienTraSauNNam);
+
+
+    </script>
+</body>
+</html>

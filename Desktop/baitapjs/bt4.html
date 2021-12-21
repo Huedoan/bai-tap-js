@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var currentTime = new Date(); // 14:18
+        var start = currentTime.getMilliseconds();
+
+        var currentYear = currentTime.getFullYear();
+        var currentMonth = currentTime.getMonth();
+        var currentDate = currentTime.getDate();
+        var currentHour = currentTime.getHours();
+        var currentMinute = currentTime.getMinutes(); 
+        var currentSecond = currentTime.getSeconds();
+
+        var end = new Date().getMilliseconds();
+        
+        alert('bay gio la ' + currentHour + ' gio ' + currentMinute + ' phut ' + currentSecond + ' giay ' + ' ngay ' + currentDate + ' thang ' + currentMonth + ' nam ' + currentYear + ' - Total running time : ' + (end - start))
+
+    </script>
+</body>
+</html>
