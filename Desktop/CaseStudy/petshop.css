@@ -1,0 +1,38 @@
+
+#countPet {
+    color: red;
+    column-span: 2;
+}
+
+body {
+  width: 100%;
+}
+
+#banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+#footer {
+  z-index: -1;
+  position:fixed;
+  right: 0;
+  bottom: -25px;
+  width: 25%;
+}
+
+#container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.form-group {
+  padding-bottom: 15px;
+}
+
+span {
+  margin-left: 5px;
+}
